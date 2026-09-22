@@ -1,4 +1,4 @@
-# Calculadora de Compra — Loja Virtual (Linguagem C)
+# Calculadora de Compra - Loja Virtual (Linguagem C)
 
 Programa em C que calcula o preço total de uma compra em uma loja virtual, somando o preço do produto ao preço do frete. O frete é calculado de acordo com a região de entrega e o peso do produto, seguindo uma tabela de valores fixa.
 
