@@ -47,7 +47,7 @@ Peso do produto (kg): 0.8
 Preco do produto (R$): 89.90
 Escolha (1-4): 2
 
-================ RESUMO DA COMPRA ================
+Resumo da Compra
 Codigo do produto ......: 101
 Nome do produto .........: Livro Clean Code
 Peso do produto .........: 0.80 kg
@@ -57,7 +57,6 @@ Preco do frete ...........: R$ 25.00
 Preco total da compra ...: R$ 114.90
 Data e hora da compra ...: 22/09/2026 19:37:05
 Data prevista de entrega : 27/09/2026
-====================================================
 ```
 
 ## Estrutura do código
