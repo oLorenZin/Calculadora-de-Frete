@@ -2,7 +2,7 @@
 
 Programa em C que calcula o preço total de uma compra em uma loja virtual, somando o preço do produto ao preço do frete. O frete é calculado de acordo com a região de entrega e o peso do produto, seguindo uma tabela de valores fixa.
 
-Projeto desenvolvido como Atividade Avaliativa (Aprendizagem Baseada em Problemas) da disciplina de Estruturas de Programação — UVA.
+Projeto desenvolvido como Atividade Avaliativa (Aprendizagem Baseada em Problemas) da disciplina de Bases de Programação — UVA.
 
 ## Funcionalidades
 
