@@ -1,3 +1,9 @@
+/* Lorenzo Braiener da Cunha MA: 1230206908
+   Mateus Ibirapitanga Teske Prado MA: 1260119308
+   Felipe Celestrino Monteiro MA: 1230112049
+   Ian Machado Ranel Calassara Pereira MA: 1260126459
+   Miguel de Oliveira Azeredo MA: 1260208490*/
+
 #include <stdio.h>
 #include <locale.h>
 #include <time.h>
@@ -25,28 +31,32 @@ const char *nomeRegiao(int regiao) {
 /* Calcula o frete de acordo com a regiao e o peso.
    Retorna -1.0 se a regiao informada for invalida. */
 float calcularFrete(int regiao, float peso) {
-    float fretePadrao[4] = {30.00, 25.00, 35.00, 40.00};
-    float fretePesado[4] = {50.00, 45.00, 55.00, 60.00};
- 
-    if (regiao < 1 || regiao > 4) {
-        return -1.0;
-    }
- 
-    int idx = regiao - 1;
- 
-    if (peso > 2.0f) {
-        return fretePesado[idx];
-    } else {
-        return fretePadrao[idx];
-    }
+ int adiocional - 0;
+ if (peso > 2){
+  adicional = 20;
+ }
+ switch(regiao) {
+ case 1:
+  return 30 + adicional;
+ case 2:
+  return 25 + adicional;
+ case 3:
+  return 35 + adicional;
+ case 4:
+  return 40 + adicional;
+ default:
+  return -1;
+ }
 }
- 
+
 int main(void) {
-    setlocale(LC_ALL, "Portuguese");
+    setlocale(LC_ALL, ".utf8");
 
     Produto p;
     int regiao;
     float frete, total;
+
+    printf("---------------CALCULADORA DE COMPRA - LOJA VIRTUAL---------------\n");
  
     printf("Código do produto: ");
     scanf("%d", &p.codigo);
@@ -91,7 +101,7 @@ int main(void) {
     time_t timestampEntrega = agora + (PRAZO_ENTREGA_DIAS * 24L * 60L * 60L);
     struct tm dataEntrega = *localtime(&timestampEntrega);
  
-    printf("\n---------------Resumo da Compra---------------\n");
+    printf("\n---------------RESUMO DA COMPRA---------------\n");
     printf("Código do produto.......: %d\n", p.codigo);
     printf("Nome do produto.........: %s\n", p.nome);
     printf("Peso do produto.........: %.2f kg\n", p.peso);
