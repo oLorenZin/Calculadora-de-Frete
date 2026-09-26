@@ -31,7 +31,7 @@ const char *nomeRegiao(int regiao) {
 /* Calcula o frete de acordo com a regiao e o peso.
    Retorna -1.0 se a regiao informada for invalida. */
 float calcularFrete(int regiao, float peso) {
- int adiocional - 0;
+ int adicional = 0;
  if (peso > 2){
   adicional = 20;
  }
